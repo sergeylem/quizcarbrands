@@ -148,12 +148,12 @@ class App extends Component {
         );
     
         nextButton = (
-          <button >
+          // <button >
              <img 
                onClick={() =>  {this.changeImgList(this.state.questionIndex)} }
                src= {require('./assets/arrows/arrow2.png')} 
                alt ="ButtonNext" className={classes.OrderBtnNext}/>
-          </button>
+          // </button>
         );
       };    
     }
@@ -183,38 +183,38 @@ class App extends Component {
         {playSound}
         {playGameOver}
         <div>
-           <button> 
+           {/* <button>  */}
              <img
                onClick={() =>  { this.checkAnswer(0); } }
                src= {this.state.imgList[this.state.rndImages[0]].img} 
                alt ="Button1" className={classes.OrderButton}/>
-           </button>
-           <button>
+           {/* </button> */}
+           {/* <button> */}
              <img 
                onClick={() => { this.checkAnswer(1); } }
                src= {this.state.imgList[this.state.rndImages[1]].img} 
                alt="Button2" className={classes.OrderButton} />
-           </button>
-           <button >
+           {/* </button>
+           <button > */}
              <img 
                onClick={() =>  {this.repeatAnswer()} }
                src= {require('./assets/arrows/speaker2.png')} 
                alt ="ButtonNext" className={classes.OrderBtnRepeat}/>
-          </button> 
+          {/* </button>  */}
         </div>
         <div>
-          <button>
+          {/* <button> */}
              <img 
                onClick={() => { this.checkAnswer(2); } }
                src= {this.state.imgList[this.state.rndImages[2]].img} 
                alt="Button3" className={classes.OrderButton}/>
-          </button>
-          <button>
+          {/* </button>
+          <button> */}
              <img
                onClick={() => { this.checkAnswer(3); }  }
                src= {this.state.imgList[this.state.rndImages[3]].img} 
                alt="Button4" className={classes.OrderButton}/>
-          </button>
+          {/* </button> */}
           {nextButton}
         </div>
       </div>
